@@ -9,6 +9,8 @@ header{
     position: sticky;
     width: 100%;
     top: 0;
+    background: black;
+    z-index: 2;
 }
 .header{
     display: flex;
@@ -17,6 +19,8 @@ header{
     background: black;
     padding: 10px 24px;
     width: 1349px;
+    margin: 0 auto;
+    display: none;
     &__logo{
         width: 200px;
         img{
@@ -79,33 +83,103 @@ header{
             width: 120px;
             gap: 24px;
             list-style: none;
-            li a{
-                color: #868995;
-                text-decoration: none;
-                &:hover{
-                    color: red;
-                    transition: all .5s;
+            li{
+                a{
+                    color: #868995;
+                    text-decoration: none;
+                    &:hover{
+                        color: red;
+                        transition: all .5s;
+                    }
+                }
+                
+                .shopping{
+                    text-decoration: none;
+                    position: absolute;
+                    top: -22px;
+                    right: -14px;
+                    background: #ee4266;
+                    width: 17px;
+                    border: 1px solid  black;
+                    border-radius: 999px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                }
+            } 
+        }
+    }
+}
+.header-mb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    &-menu{
+        width: calc(100% / 3);
+        &-ic{
+            i{
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+        &-submenu{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            background: #fff;
+        }
+    }
+    &-logo{
+        width: calc(100% / 3);
+        display: flex;
+        justify-content: center;
+        img{
+            width: 66px;
+        }
+    }
+    &-search{
+        width: calc(100% / 3);
+        .search__main{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #868995;
                 }
             }
-            .shopping{
-                text-decoration: none;
-                position: absolute;
-                top: 18px;
-                right: 28px;
-                background: #ee4266;;;
-                width: 17px;
-                border: 1px solid  black;
-                border-radius: 999px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
+            .position{
+                position: relative;
+                .shopping{
+                    position: absolute;
+                    background: red;
+                    width: 18px;
+                    text-align: center;
+                    border-radius: 999px;
+                    color: #fff;
+                    top: -14px;
+                    right: -12px;
+                }
             }
         }
     }
 }
+.submenu-click{
+    background: black;
+    color: #fff;
+    padding: 16px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .content {
     width: 1349px;
+    margin: 0 auto;
     img{
         width: 100%;
     }
@@ -117,6 +191,7 @@ header{
     gap: 10px;
     padding-top: 15px;
     width: 1349px;
+    margin: 0 auto;
     &__summer{
         width: 50%;
     }
@@ -133,6 +208,7 @@ header{
 }
 .img{
     width: 1349px;
+    margin: 0 auto;
     ul{
         display: flex;
         align-items: center;
@@ -147,6 +223,7 @@ header{
 }
 .color{
     width: 1349px;
+    margin: 0 auto;
     &__menu{
         list-style: none;
         display: flex;
@@ -162,6 +239,7 @@ header{
 }
 .product{
     width: 1349px;
+    margin: 0 auto;
     &__name{
         text-align: center;
         padding-top: 15px;
@@ -181,6 +259,7 @@ header{
 .storeproduct{
     width: 1349px;
     padding: 10px;
+    margin: 0 auto;
     ul{
         width: 100%;
         display: flex;
@@ -223,8 +302,16 @@ header{
     &__img{
         width: 1349px;
         padding-top: 24px;
+        margin: 0 auto;
         img{
             width: 100%;
         }
     }
 }        
+
+.position{
+    position: relative;
+}
+.d-none {
+    display: none;
+}

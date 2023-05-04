@@ -6,10 +6,11 @@
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   width: 100%;
   top: 0;
+  background: black;
+  z-index: 2;
 }
 
 .header {
@@ -19,6 +20,8 @@ header {
   background: black;
   padding: 10px 24px;
   width: 1349px;
+  margin: 0 auto;
+  display: none;
 }
 .header__logo {
   width: 200px;
@@ -85,11 +88,11 @@ header {
   color: red;
   transition: all 0.5s;
 }
-.header__search ul .shopping {
+.header__search ul li .shopping {
   text-decoration: none;
   position: absolute;
-  top: 18px;
-  right: 28px;
+  top: -22px;
+  right: -14px;
   background: #ee4266;
   width: 17px;
   border: 1px solid black;
@@ -100,8 +103,73 @@ header {
   color: white;
 }
 
+.header-mb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+.header-mb-menu {
+  width: 33.3333333333%;
+}
+.header-mb-menu-ic i {
+  color: #fff;
+  font-size: 24px;
+}
+.header-mb-menu-submenu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
+.header-mb-logo {
+  width: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+}
+.header-mb-logo img {
+  width: 66px;
+}
+.header-mb-search {
+  width: 33.3333333333%;
+}
+.header-mb-search .search__main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.header-mb-search .search__main li a {
+  text-decoration: none;
+  color: #868995;
+}
+.header-mb-search .search__main .position {
+  position: relative;
+}
+.header-mb-search .search__main .position .shopping {
+  position: absolute;
+  background: red;
+  width: 18px;
+  text-align: center;
+  border-radius: 999px;
+  color: #fff;
+  top: -14px;
+  right: -12px;
+}
+
+.submenu-click {
+  background: black;
+  color: #fff;
+  padding: 16px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .content {
   width: 1349px;
+  margin: 0 auto;
 }
 .content img {
   width: 100%;
@@ -114,6 +182,7 @@ header {
   gap: 10px;
   padding-top: 15px;
   width: 1349px;
+  margin: 0 auto;
 }
 .featured__summer {
   width: 50%;
@@ -131,6 +200,7 @@ header {
 
 .img {
   width: 1349px;
+  margin: 0 auto;
 }
 .img ul {
   display: flex;
@@ -146,6 +216,7 @@ header {
 
 .color {
   width: 1349px;
+  margin: 0 auto;
 }
 .color__menu {
   list-style: none;
@@ -162,6 +233,7 @@ header {
 
 .product {
   width: 1349px;
+  margin: 0 auto;
 }
 .product__name {
   text-align: center;
@@ -182,6 +254,7 @@ header {
 .storeproduct {
   width: 1349px;
   padding: 10px;
+  margin: 0 auto;
 }
 .storeproduct ul {
   width: 100%;
@@ -224,7 +297,16 @@ header {
 .producttee__img {
   width: 1349px;
   padding-top: 24px;
+  margin: 0 auto;
 }
 .producttee__img img {
   width: 100%;
+}
+
+.position {
+  position: relative;
+}
+
+.d-none {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
