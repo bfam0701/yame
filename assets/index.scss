@@ -20,7 +20,6 @@ header{
     padding: 10px 24px;
     width: 1349px;
     margin: 0 auto;
-    display: none;
     &__logo{
         width: 200px;
         img{
@@ -116,6 +115,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 16px;
+    display: none;
     &-menu{
         width: calc(100% / 3);
         &-ic{
@@ -311,7 +311,4 @@ header{
 
 .position{
     position: relative;
-}
-.d-none {
-    display: none;
 }
