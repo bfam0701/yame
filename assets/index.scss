@@ -195,6 +195,9 @@ header{
 .presently-menu{
     list-style: none;
     display: none;
+    &.open {
+        display: block;
+    }
 }
 .content {
     max-width: 1349px;
@@ -225,6 +228,7 @@ header{
         }
     }
 }
+
 .img{
     max-width: 1349px;
     margin: 0 auto;

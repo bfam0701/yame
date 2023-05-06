@@ -129,20 +129,20 @@
                 </div>
                 <ul class=" sub-menu">
                     <li>
-                        <div>
+                        <div >
                             <i class="fa-solid fa-chevron-down click-menu"></i>
                             <a href="" class="click-menu">
                                 Bộ Sưu Tầm
                             </a>     
                         </div>
                         <ul class="presently-menu">
-                            <li>
+                            <li class="focus-menu">
                                 <a href="">bộ sưu tầm</a>
                             </li>
-                            <li>
+                            <li class="focus-menu">
                                 <a href="">bộ sưu tầm</a>
                             </li>
-                            <li>
+                            <li class="focus-menu">
                                 <a href="">bộ sưu tầm</a>
                             </li>
                         </ul>
@@ -160,13 +160,13 @@
                             </a>
                         </div>
                         <ul class="presently-menu">
-                            <li>
+                            <li class="focus-menu">
                                 <a href="">Áo Thun</a>
-                            </li>
-                            <li>
+                            </li >
+                            <li class="focus-menu">
                                 <a href="">Quần Shot</a>
                             </li>
-                            <li>
+                            <li class="focus-menu">
                                 <a href="">Quần Dài</a>
                             </li>
                         </ul>
@@ -487,6 +487,13 @@
     $(document).ready(function(){
       $(".toggle").click(function(){
         $("#menu").toggleClass("open");
+      });
+    });
+    // 
+
+    $(document).ready(function(){
+      $(".click-menu").click(function(){
+        $(".presently-menu").toggleClass("open");
       });
     });
 </script>

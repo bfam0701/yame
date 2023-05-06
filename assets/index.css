@@ -187,6 +187,9 @@ header {
   list-style: none;
   display: none;
 }
+.presently-menu.open {
+  display: block;
+}
 
 .content {
   max-width: 1349px;
